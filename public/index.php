@@ -1,15 +1,8 @@
 <?php
 
-$data = ['name' => 'Alexandre', 'age' => 40];
+session_start();
 
-ob_start();
+require '../vendor/autoload.php';
 
-extract($data);
+routerExecute();
 
-require 'home.php';
-
-$content = ob_get_contents();
-
-ob_end_clean();
-
-var_dump($content);

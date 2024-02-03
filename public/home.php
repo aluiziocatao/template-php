@@ -8,8 +8,6 @@
     <title>Home</title>
 </head>
 <body>
-    <h2>Home</h2>
 
-    <p>Olá <?php echo $name; ?> você tem <?php echo $age; ?> anos</p>
 </body>
 </html>
