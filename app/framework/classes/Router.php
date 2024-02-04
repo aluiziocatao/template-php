@@ -41,6 +41,6 @@ class Router {
         $this->controllerFound($controllerNamespace, $controller, $action);
 
         $controllerInstance = new $controllerNamespace;
-        $controllerInstance->action();
+        $controllerInstance->$action();
     }
 }
